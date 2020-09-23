@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+.jumbotron{
+  background-image: url('./components/coolDude.jpg');
+  background-size: cover;
+}
+.jumbotron-fluid{
+  margin-bottom: 0;
+  color: beige;
+  min-height: 280px;
 }

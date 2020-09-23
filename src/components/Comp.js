@@ -1,6 +1,7 @@
 import React from "react";
 
 function Comp(props) {
+    //this is used to make it so we are able to sort the employee alphabetically  either ascending or descending 
     const searchedSorted = props.employees.filter( employee => (employee.firstName + " " + employee.lastName).toLowerCase().includes(props.search.toLowerCase())).sort( (a,b) => {
         let x = (a.firstName + a.lastName).toLowerCase();
         let y = (b.firstName + b.lastName).toLowerCase();

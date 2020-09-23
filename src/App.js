@@ -42,8 +42,8 @@ const employees = [
   {
     id: 6,
     firstName: "Ben",
-    lastName: "D",
-    email: "BenD1@coolguy.com",
+    lastName: "Garcia",
+    email: "BenGarcia1@coolguy.com",
     favoriteFood: "Burger",
   },
   {
@@ -82,9 +82,15 @@ function App() {
   const [sort, setSort] = useState("asc");
 
   return (
+    
     <>
+    <div className="body">
+    <div className="jumbotron jumbotron-fluid text-center">
+    </div>
+    </div>
       <h1 className="title text-center">Cool Guy Employee Directory</h1>
       <form>
+        
         <div className="search form-group form-inline d-flex justify-content-center">
           <label htmlFor="search">Search Name:</label>
           <input id="search" onChange={ event => setSearch(event.target.value) } placeholder="Michael Zaslavsky " />
